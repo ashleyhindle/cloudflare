@@ -32,7 +32,7 @@ class Dns extends Zone
      * @param string   $content         DNS record content
      * @param int|null $ttl             Time to live for DNS record. Value of 1 is 'automatic'
      */
-    public function create($zone_identifier, $type, $name, $content, $ttl = null)
+    public function createRecord($zone_identifier, $type, $name, $content, $ttl = null)
     {
         $data = array(
             'type'    => strtoupper($type),
